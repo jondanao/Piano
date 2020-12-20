@@ -1,0 +1,180 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://piano_scene.gd" type="Script" id=1]
+[ext_resource path="res://key_white_up.png" type="Texture" id=2]
+[ext_resource path="res://key_white_down.png" type="Texture" id=3]
+[ext_resource path="res://key_black_up.png" type="Texture" id=4]
+[ext_resource path="res://key_black_down.png" type="Texture" id=5]
+[ext_resource path="res://1-C.wav" type="AudioStream" id=6]
+[ext_resource path="res://3-D.wav" type="AudioStream" id=7]
+[ext_resource path="res://5-E.wav" type="AudioStream" id=8]
+[ext_resource path="res://2-Db.wav" type="AudioStream" id=9]
+[ext_resource path="res://4-Eb.wav" type="AudioStream" id=10]
+[ext_resource path="res://6-F.wav" type="AudioStream" id=11]
+[ext_resource path="res://7-Gb.wav" type="AudioStream" id=12]
+[ext_resource path="res://8-G.wav" type="AudioStream" id=13]
+[ext_resource path="res://9-Ab.wav" type="AudioStream" id=14]
+[ext_resource path="res://10-A.wav" type="AudioStream" id=15]
+[ext_resource path="res://11-Bb.wav" type="AudioStream" id=16]
+[ext_resource path="res://13-C.wav" type="AudioStream" id=17]
+[ext_resource path="res://12-B.wav" type="AudioStream" id=18]
+
+[node name="piano_scene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="C" type="TextureButton" parent="."]
+margin_left = 2.0
+margin_top = 155.0
+margin_right = 84.0
+margin_bottom = 601.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="D" type="TextureButton" parent="."]
+margin_left = 83.0
+margin_top = 155.0
+margin_right = 165.0
+margin_bottom = 601.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Db" type="TextureButton" parent="."]
+margin_left = 59.6002
+margin_top = 155.4
+margin_right = 108.6
+margin_bottom = 405.4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+
+[node name="E" type="TextureButton" parent="."]
+margin_left = 166.0
+margin_top = 154.0
+margin_right = 248.0
+margin_bottom = 600.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="B" type="TextureButton" parent="."]
+margin_left = 495.0
+margin_top = 159.0
+margin_right = 577.0
+margin_bottom = 605.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="C2" type="TextureButton" parent="."]
+margin_left = 578.0
+margin_top = 157.0
+margin_right = 660.0
+margin_bottom = 603.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="A" type="TextureButton" parent="."]
+margin_left = 412.0
+margin_top = 157.0
+margin_right = 494.0
+margin_bottom = 603.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="G" type="TextureButton" parent="."]
+margin_left = 328.0
+margin_top = 156.0
+margin_right = 410.0
+margin_bottom = 602.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="F" type="TextureButton" parent="."]
+margin_left = 247.0
+margin_top = 156.0
+margin_right = 329.0
+margin_bottom = 602.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Eb" type="TextureButton" parent="."]
+margin_left = 142.6
+margin_top = 155.4
+margin_right = 191.6
+margin_bottom = 405.4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+
+[node name="Bb" type="TextureButton" parent="."]
+margin_left = 473.6
+margin_top = 165.4
+margin_right = 522.6
+margin_bottom = 415.4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+
+[node name="Gb" type="TextureButton" parent="."]
+margin_left = 305.6
+margin_top = 159.4
+margin_right = 354.6
+margin_bottom = 409.4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+
+[node name="Ab" type="TextureButton" parent="."]
+margin_left = 388.6
+margin_top = 163.4
+margin_right = 437.6
+margin_bottom = 413.4
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+
+[node name="C_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="D_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="E_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="Db_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="Eb_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="F_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="Gb_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="G_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Ab_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+
+[node name="A_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+
+[node name="Bb_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+
+[node name="C2_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+
+[node name="B_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+
+[connection signal="button_down" from="C" to="." method="_on_C_button_down"]
+[connection signal="button_down" from="D" to="." method="_on_D_button_down"]
+[connection signal="button_down" from="Db" to="." method="_on_Db_button_down"]
+[connection signal="button_down" from="E" to="." method="_on_E_button_down"]
+[connection signal="button_down" from="B" to="." method="_on_B_button_down"]
+[connection signal="button_down" from="C2" to="." method="_on_C2_button_down"]
+[connection signal="button_down" from="A" to="." method="_on_A_button_down"]
+[connection signal="button_down" from="G" to="." method="_on_G_button_down"]
+[connection signal="button_down" from="F" to="." method="_on_F_button_down"]
+[connection signal="button_down" from="Eb" to="." method="_on_Eb_button_down"]
+[connection signal="button_down" from="Bb" to="." method="_on_Bb_button_down"]
+[connection signal="button_down" from="Gb" to="." method="_on_Gb_button_down"]
+[connection signal="button_down" from="Ab" to="." method="_on_Ab_button_down"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/6-F.wav-1339e6fb83f7b45f38e10f4b4c36f78b.sample"
+
+[deps]
+
+source_file="res://6-F.wav"
+dest_files=[ "res://.import/6-F.wav-1339e6fb83f7b45f38e10f4b4c36f78b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
